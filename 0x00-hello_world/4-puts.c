@@ -1,9 +1,9 @@
-include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry Point
  *
- * Describtion: a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+ * Describtion: a C program that prints using puts function
  *
  * Return: Always 0 (success)
  */
