@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main _ Entry point
+ * main - Entry point
  *
  * Description: prints _putchar using prototype
  *
  * Return: Always 0 (Success)
- */
+*/
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 
 	for (ch = 0; ch < 8; ch++)
 		_putchar(str[ch]);
-	_putchar("\n");
+	_putchar('\n');
 
 	return (0);
 }
