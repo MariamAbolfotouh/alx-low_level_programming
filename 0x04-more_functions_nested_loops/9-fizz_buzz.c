@@ -1,4 +1,4 @@
-#include "msin.h"
+#include "main.h"
 
 /**
  * main - print numbers 1 - 100
