@@ -6,7 +6,7 @@
  * @src: input string
  * @dest: input string
  *
- * return: to dest
+ * Return: to dest
 */
 
 char *_strcat(char *dest, char *src)
@@ -15,12 +15,12 @@ char *_strcat(char *dest, char *src)
 
 	i = 0;
 
-	while (s1[i])
+	while (dest[i])
 		i++;
 
-	for (j = 0; s2[j]; j++)
+	for (j = 0; src[j]; j++)
 
-		s1[i++] = s2[j];
+		dest[i++] = src[j];
 
 	return (dest);
 }
