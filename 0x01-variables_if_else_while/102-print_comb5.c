@@ -20,11 +20,14 @@ int main(void)
 			{
 				for (n = 48; n <= 57; n++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(m);
-					putchar(n);
+					if (!(i == j && j == m && m == n))
+					{
+						putchar(i);
+						putchar(j);
+						putchar(' ');
+						putchar(m);
+						putchar(n);
+					}
 					if (!(i == 57 && j == 56 && m == 57 && n == 57))
 					{
 						putchar(',');
