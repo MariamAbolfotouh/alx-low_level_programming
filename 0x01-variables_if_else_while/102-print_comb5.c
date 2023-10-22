@@ -14,29 +14,28 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 48; j < 57; j++)
+	for (j = 48; j < 57; j++)
+	{
+		for (m = 48; m <= 57; m++)
 		{
-			for (m = 48; m <= 57; m++)
+		for (n = 48; n <= 57; n++)
+		{
+			if (!(i == j && j == m && m == n))
 			{
-				for (n = 48; n <= 57; n++)
+				putchar(i);
+				putchar(j);
+				putchar(' ');
+				putchar(m);
+				putchar(n);
+				if (!(i == 57 && j == 56 && m == 57 && n == 57))
 				{
-					if (!(i == j && j == m && m == n))
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(m);
-						putchar(n);
-
-						if (!(i == 57 && j == 56 && m == 57 && n == 57))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
+		}
+	}
 	}
 	putchar('\n');
 
