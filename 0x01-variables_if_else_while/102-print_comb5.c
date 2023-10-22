@@ -27,11 +27,12 @@ int main(void)
 						putchar(' ');
 						putchar(m);
 						putchar(n);
-					}
-					if (!(i == 57 && j == 56 && m == 57 && n == 57))
-					{
-						putchar(',');
-						putchar(' ');
+
+						if (!(i == 57 && j == 56 && m == 57 && n == 57))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
