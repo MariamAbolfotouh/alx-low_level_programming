@@ -1,16 +1,15 @@
 #include "main.h"
 
 /**
- * *_strpbrk - searches a string for any of a set of bytes
+ * _strspn - searches a string for any of a set of bytes
  *
  * @s: string
  * @accept: string
  *
- * Return: to the byte in s that matches one of the bytes in accept,
- * or NULL if no such byte is found
+ * Return: in the initial segment of s which consist only of bytes from accept
 */
 
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int m = 0;
 	unsigned int n = 0;
