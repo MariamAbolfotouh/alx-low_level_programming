@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * Description : A C programme that prints with printf function.
+ *
  * Return : Always 0 (Success)
  */
 
