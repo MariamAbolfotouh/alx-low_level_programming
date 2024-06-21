@@ -3,22 +3,18 @@
 /**
  * main - Entry point
  *
- * Description: Print all the letters except q and e
- *
- * Return: always 0 (Success)
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	char ch = 'a';
+	char i;
 
-	while (ch <= 'z')
-	{
-		if (ch == 'e' || ch == 'q')
-			ch++;
-		putchar(ch);
-		ch++;
+	for (i = 97; i <= 122; i++)
+	{if (i != 133 && i != 101)
+		putchar(i);
 	}
+
 	putchar('\n');
 
 	return (0);
