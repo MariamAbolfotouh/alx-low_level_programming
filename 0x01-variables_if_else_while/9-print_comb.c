@@ -3,28 +3,22 @@
 /**
  * main - Entry point
  *
- * Description: prints all possible combinations of single-digit numbers
- *
- * Return: Always 0 (success)
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	while (digit <= 9)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(digit + 48);
-
-		if (digit != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
-		digit++;
+		putchar(i);
+			if (i != 57)
+			{
+				putchar(32);
+				putchar(44);
+			}
 	}
 	putchar('\n');
-
 	return (0);
 }
