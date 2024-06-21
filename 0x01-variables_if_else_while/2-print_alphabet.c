@@ -3,21 +3,15 @@
 /**
  * main - Entry point
  *
- * Description: print the alphabet in lowercase
- *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char ch = 'a';
+	char i;
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-	putchar('\n');
+	for (i = 97; i <= 122; i++)
+	putchar(i);
 
-	return (0);
+	return 0;
 }
