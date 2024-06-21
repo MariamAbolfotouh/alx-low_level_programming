@@ -10,8 +10,8 @@ int main(void)
 {
 	char i;
 
-	for (i = 97; i <= 122; i++)
-	{if (i != 133 || i != 101)
+	for (i = 'a'; i <= 'z'; i++)
+	{if (i != 'q' && i != 'e')
 		putchar(i);
 	}
 
