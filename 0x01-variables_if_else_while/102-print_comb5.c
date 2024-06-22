@@ -3,42 +3,32 @@
 /**
  * main - Entry point
  *
- * Description: prints all possible combinations of two two-digit numbers
- *
  * Return: Always 0 (Success)
-*/
+ */
 
 int main(void)
 {
-	int i, j, m, n;
+	int i, j;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 99; i++)
 	{
-	for (j = 48; j < 57; j++)
-	{
-		for (m = 48; m <= 57; m++)
+		for (j = i; j <= 99; j++)
 		{
-		for (n = 48; n <= 57; n++)
-		{
-			if (!(i == j && j == m && m == n))
+			if (i != j)
 			{
-				putchar(i);
-				putchar(j);
+				putchar((i / 10) + '0');
+				putchar((j % 10) + '0');
 				putchar(' ');
-				putchar(m);
-				putchar(n);
-				if (!(i == 57 && j == 56 && m == 57 && n == 57))
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
-		}
-	}
 	}
 	putchar('\n');
-
 	return (0);
 }
-
