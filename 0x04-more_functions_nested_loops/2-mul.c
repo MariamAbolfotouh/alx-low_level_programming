@@ -3,11 +3,11 @@
 /**
  * mul - multiplies two integers
  *
- * @a: input
+ * @a: first input
  *
- * @b: input
+ * @b: second input
  *
- * Return: to c
+ * Return: returns to c
  */
 
 int mul(int a, int b)
