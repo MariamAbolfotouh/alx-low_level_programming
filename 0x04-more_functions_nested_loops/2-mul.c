@@ -5,13 +5,11 @@
  *
  * @a: first input
  * @b: second input
- * @c: the mul
  *
- * Return: returns to c
+ * Return: return
  */
 
 int mul(int a, int b)
 {
-	int c = a * b;
-	return (c);
+	return (a * b);
 }
