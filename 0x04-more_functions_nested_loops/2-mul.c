@@ -6,6 +6,8 @@
  * @a: input
  *
  * @b: input
+ *
+ * Return: to c
  */
 
 int mul(int a, int b)
