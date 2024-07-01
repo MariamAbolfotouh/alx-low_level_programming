@@ -3,28 +3,31 @@
 /**
  * puts_half - prints half of a string
  *
- * @str: input string
-*/
+ * @n: characters of the string
+ */
 
 void puts_half(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
-
-
-	if (i % 2 == 0)
+	int n = 0;
+	while (str[n] != '\0')
 	{
-		for (i /= 2; str[i] != '\0'; i++)
+		n++;
+	}
+
+	for (i = n; str[i] != '\0')
+	{
+		if (n % 2 == 0)
 		{
+			i = n / 2;
 			_putchar(str[i]);
 		}
-	}
-	else
-	{
-		i--;
-		for (i /= 2; str[i] != '\0'; i++)
+		else
+		{
+			i = (n - 1) / 2;
 			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
