@@ -12,8 +12,8 @@ void rev_string(char *s)
 	char temp;
 
 	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (int j = 0; i > j; i--, j++)
+
+	for (int j = 0; i > j; i--, j++)
 		{
 			temp = s[i];
 			s[i] = s[j];
