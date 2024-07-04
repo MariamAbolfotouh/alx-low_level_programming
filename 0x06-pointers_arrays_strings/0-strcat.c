@@ -19,10 +19,8 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	
-	j = 0;
 
-	for (i; dest[i] != '\0'; i++, j++)
+	for (j = 0; src[j]; i++, j++)
 	{
 		dest[i] = src[j];
 	}
