@@ -23,8 +23,7 @@ char *cap_string(char *str)
 				i++;
 				str[i] = str[i] - 32;
 			}
-			
-			if (str[i] >= 65 && str[i] <= 90)
+			else if (str[i] >= 65 && str[i] <= 90)
 			{
 				continue;
 			}
