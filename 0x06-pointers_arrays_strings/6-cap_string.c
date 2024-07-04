@@ -17,6 +17,13 @@ char *cap_string(char *str)
 		if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '.')
 		{
 			i++;
+
+			if (str[i] == '\n')
+			{
+				i++;
+				str[i] = str[i] - 32;
+			}
+			
 			if (str[i] >= 65 && str[i] <= 90)
 			{
 				continue;
