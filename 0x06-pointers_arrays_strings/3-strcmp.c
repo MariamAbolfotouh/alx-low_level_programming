@@ -5,6 +5,8 @@
  *
  * @s1: input string
  * @s2: input string
+ *
+ * Return: 15 or -15 0r 0
 */
 
 int _strcmp(char *s1, char *s2)
