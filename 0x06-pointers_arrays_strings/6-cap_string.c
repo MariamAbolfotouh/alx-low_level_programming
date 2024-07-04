@@ -14,21 +14,28 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
-		while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
 		str[i] == ',' || str[i] == ';' || str[i] == '.' ||
 		str[i] == '!' || str[i] == '?' || str[i] == '"' ||
 		str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
 			i++;
+			while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+			str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+			str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+			str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+			{
+				i++;
+			}
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - ('a' - 'A');
+			}
 		}
-
-		if (str[i] >= 'a' && str[i] <= 'z')
+		else
 		{
-			str[i] = str[i] - ('a' - 'A');
+			i++;
 		}
-
-		i++;
 	}
-
 	return (str);
 }
