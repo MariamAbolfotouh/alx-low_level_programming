@@ -18,10 +18,9 @@ char *cap_string(char *str)
 		{
 			i++;
 
-			if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '.' || str[i] == ',' || str[i] == ';' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+			while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '.' || str[i] == ',' || str[i] == ';' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
 			{
 				i++;
-				str[i] = str[i] - 32;
 			}
 			else if (str[i] >= 65 && str[i] <= 90)
 			{
@@ -30,6 +29,10 @@ char *cap_string(char *str)
 			else if (str[i] >= 97 && str[i] <= 122)
 			{
 				str[i] = str[i] - 32;
+			}
+			else
+			{
+				i++;
 			}
 		}
 	}
