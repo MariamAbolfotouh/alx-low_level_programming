@@ -3,26 +3,26 @@
 /**
  * *_strncat - concatenates two strings
  *
- * @dest: input string
- * @src: input string
- * @n: bytes
+ * @dest: destination string
+ * @src : source string
+ * @n: numbers of bytes
  *
- * Return: to dest
-*/
+ * Return : dest
+ */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
 	i = 0;
-
 	while (dest[i])
+	{
 		i++;
+	}
 
-	for (j = 0; j < n && src[j] != '\0'; j++)
-		dest[i + j] = src[j];
-
-	dest[i + j] = '\0';
-
+	for (j = 0; j < n; j++, i++)
+	{
+		dest[i] = src[j];
+	}
 	return (dest);
 }
