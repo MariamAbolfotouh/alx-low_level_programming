@@ -5,7 +5,7 @@
  *
  * @n: input value
  *
- * Return: string
+ * Return: to n
 */
 
 char *leet(char *n)
