@@ -4,17 +4,23 @@
  * reverse_array -  reverses the content of an array of integers
  *
  * @a: array
- * @n: number of elements of the array
-*/
+ * @n: input number
+ */
 
 void reverse_array(int *a, int n)
 {
-	int i, j, temp;
+	int i, temp;
 
-	for (i = 0, j = (n - 1); i < j; i++, j--)
+	n = n - 1;
+
+	for (i = 0; i < n; i++, n--)
 	{
+		if (i == n)
+		{
+			continue;
+		}
 		temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
+		a[i] = a[n];
+		a[n] = temp;
 	}
 }
