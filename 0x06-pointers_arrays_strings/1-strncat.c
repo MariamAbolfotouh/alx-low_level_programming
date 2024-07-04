@@ -7,7 +7,7 @@
  * @src: source string
  * @n: numbers of bytes
  *
- * Return : dest
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -24,5 +24,8 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[i] = src[j];
 	}
+
+	dest[i] = '\0';
+
 	return (dest);
 }
