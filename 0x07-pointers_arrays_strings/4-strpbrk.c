@@ -28,8 +28,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	if (s[i] == NULL)
-	{
-		return (NULL);
-	}
+	return (0);
 }
