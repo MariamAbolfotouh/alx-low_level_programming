@@ -6,7 +6,8 @@
  * @s: string
  * @c: located character
  *
- * Return: c in the string s, or NULL if the character is not found
+ * Return: c in the string s,
+ *or NULL if the character is not found
  */
 
 char *_strchr(char *s, char c)
@@ -22,5 +23,5 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return ('\0');
+	return (NULL);
 }
