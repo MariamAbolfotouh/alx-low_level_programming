@@ -3,7 +3,7 @@
 /**
  * *_memset - fills memory with a constant byte
  *
- * @*s: pointer to the array
+ * @s: pointer to the array
  * @b: constant byte
  * @n: number of bytes
  *
