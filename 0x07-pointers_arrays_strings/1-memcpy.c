@@ -3,21 +3,20 @@
 /**
  * *_memcpy - copies memory area
  *
- * @n: bytes of the memory area
- * @src: memory area
- * @dest: memory area
+ * @dest: destination area
+ * @src: source area
+ * @n: number of bytes
  *
- * Return: to dest
-*/
+ * Return: (dest)
+ */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int j = 0;
+	int i;
 
-	for (; j < n;)
+	for (i = 0; i < n; i++)
 	{
-		dest[j] = src[j];
-		j++;
+		dest[i] = src[i];
 	}
 
 	return (dest);
