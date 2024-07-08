@@ -7,7 +7,7 @@
  * @b: constant byte
  * @n: number of bytes
  *
- * Return: to (s - n)
+ * Return: to (s)
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -16,8 +16,10 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
+		*s = b;
+		*s++;
 	}
+	s = s - n;
 
-	return (s - n);
+	return (s);
 }
