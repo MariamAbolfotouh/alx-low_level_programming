@@ -11,8 +11,7 @@
 int guess(int n, int sqr);
 int _sqrt_recursion(int n)
 {
-	int sqr = 1;
-	return (_sqrt_recursion(n, ++sqr));
+	return (guess(n, 1));
 }
 
 int guess(int n, int sqr)
