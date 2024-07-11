@@ -21,7 +21,7 @@ int guess(int n, int sqr)
 	{
 		return (sqr);
 	}
-	else if (sqr < n)
+	else if (sqr * sqr < n)
 	{
 		return (guess(n, ++sqr);
 	}
