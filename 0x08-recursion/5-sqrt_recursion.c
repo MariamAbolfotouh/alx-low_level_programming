@@ -12,12 +12,12 @@ int guess(int n, int sqr);
 int _sqrt_recursion(int n)
 {
 	int sqr = 1;
-	return (sqrt_recursion(n, ++sqr));
+	return (_sqrt_recursion(n, ++sqr));
 }
 
 int guess(int n, int sqr)
 {
-	if (n = sqr * sqr)
+	if (n == sqr * sqr)
 	{
 		return (sqr);
 	}
