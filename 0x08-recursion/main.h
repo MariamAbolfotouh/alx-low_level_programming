@@ -11,21 +11,7 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int is_prime_number(int n);
-int guess(int n, int sqr)
-{
-        if (n = sqr * sqr)
-        {
-                return (sqr);
-        }
-        else if (sq < n)
-        {
-                return (guess(n, ++sqr);
-        }
-        else
-        {
-        return (-1)
-        }
-}
+int guess(int n, int sqr);
 
 
 #endif
