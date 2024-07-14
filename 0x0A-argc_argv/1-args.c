@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main _ Entry point
+ * main - Entry point
  *
  * @argc: count
  * @argv: vector
