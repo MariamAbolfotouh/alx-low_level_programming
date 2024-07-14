@@ -4,6 +4,9 @@
 /**
  * main - Entry point
  *
+ * @argc: count
+ * @argv: vector
+ *
  * Return: Always 0 (Success)
  */
 
