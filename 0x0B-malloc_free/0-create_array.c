@@ -14,7 +14,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char temp = 'c';
+	char temp = c;
 	char *p = malloc(size * sizeof(char));
 
 	for (i = 0; i < size; i++)
@@ -30,8 +30,9 @@ char *create_array(unsigned int size, char c)
 	else if (p == NULL)
 	{
 		return (NULL);
+	}
 	else
 	{
-		return (*p);
+		return (p);
 	}
 }
