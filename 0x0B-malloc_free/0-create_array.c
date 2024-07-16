@@ -23,11 +23,11 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return (NULL);
+		return (0);
 	}
-	else if (p == NULL)
+	else if (p == 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	else
 	{
