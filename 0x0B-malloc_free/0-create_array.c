@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 	char temp = 'c';
-	char *p = char (malloc(size * sizeof(char));
+	char *p =(malloc(size * sizeof(char));
 
 	for (i = 0; i < size; i++)
 	{
@@ -23,11 +23,15 @@ char *create_array(unsigned int size, char c)
 		p[i] = temp;
 	}
 
-	if (p[i] == 0)
+	if (size == 0)
 	{
-	return (NULL);
+		return (NULL);
 	}
+	else if (p[i] == NULL)
+	{
+		return (NULL);
 	else
 	{
-	rturn (*p);
+		return (*p);
+	}
 }
