@@ -1,6 +1,4 @@
 #include "main.h"
-#ifndef dog_h
-#define dog_h
 
 /**
  * init_dog - initialize a variable of type struct dog
