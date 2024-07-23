@@ -33,7 +33,7 @@ char *_strcopy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] = '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
@@ -80,7 +80,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
-		free(fog);
+		free(dog);
 		return (NULL);
 	}
 
