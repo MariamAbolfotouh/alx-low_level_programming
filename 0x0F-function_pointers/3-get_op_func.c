@@ -5,14 +5,12 @@
  * to perform the operation asked by the user
  *
  * @s: the operator passed as argument to the program
- * @a: 1st arg
- * @b: 2nd arg
  *
  * Return: a pointer to the function that corresponds
  * to the operator given as a parameter
  */
 
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 	{"+", op_add},
