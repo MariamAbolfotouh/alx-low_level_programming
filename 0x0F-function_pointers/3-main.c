@@ -1,7 +1,10 @@
+#include "function_pointers.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include "3-calc.h"
 
 /**
- * main - Entry point
+ * main - check the code
  *
  * @argc: count
  * @argv: vector
@@ -12,7 +15,7 @@
 int main(int argc, char **argv)
 {
 	int num1, num2;
-	int (*func)(int, int);
+	int (*calc)(int, int);
 
 	if (argc != 4)
 	{
@@ -23,9 +26,9 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	func = get_op_func(argv[2]);
+	calc = get_op_func(argv[2]);
 
-	if (!func)
+	if (!calc)
 	{
 		printf("Error\n");
 		exit(99);
@@ -37,7 +40,7 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	printf("%d\n", func(num1, num2));
+	printf("%d\n", calc(num1, num2));
 	return (0);
 }
 
