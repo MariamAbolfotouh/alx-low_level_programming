@@ -24,3 +24,23 @@ int create_file(const char *filename, char *text_content)
 	close(i);
 	return (n == l ? 1 : -1);
 }
+
+/**
+ * _strlen - returns the length of the string
+ *
+ * @s: string
+ *
+ * Return: the length of the string
+ */
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		i++;
+	return (i);
+}
+
